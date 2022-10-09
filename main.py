@@ -11,9 +11,9 @@ SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
 GROUNDY = SCREENHEIGHT * 0.8
 GAME_SPRITES = {}
 GAME_SOUNDS = {}
-PLAYER = 'py_game_material/imges/Luffy.png'
-BACKGROUND = 'py_game_material/imges/bg.png'
-PIPE = 'py_game_material/imges/sea_monster.png'
+PLAYER = 'imges/Luffy.png'
+BACKGROUND = 'imges/bg.png'
+PIPE = 'imges/sea_monster.png'
 
 def welcomeScreen():
     """
@@ -189,28 +189,28 @@ if __name__ == "__main__":
     FPSCLOCK = pygame.time.Clock()
     pygame.display.set_caption('Luffy By Sumit')
     GAME_SPRITES['numbers'] = [
-        pygame.image.load('py_game_material/imges/0.png').convert_alpha(),
-        pygame.image.load('py_game_material/imges/1.png').convert_alpha(),
-        pygame.image.load('py_game_material/imges/2.png').convert_alpha(),
-        pygame.image.load('py_game_material/imges/3.png').convert_alpha(),
-        pygame.image.load('py_game_material/imges/4.png').convert_alpha(),
-        pygame.image.load('py_game_material/imges/5.png').convert_alpha(),
-        pygame.image.load('py_game_material/imges/6.png').convert_alpha(),
-        pygame.image.load('py_game_material/imges/7.png').convert_alpha(),
-        pygame.image.load('py_game_material/imges/8.png').convert_alpha(),
-        pygame.image.load('py_game_material/imges/9.png').convert_alpha(),
+        pygame.image.load('imges/zero.png').convert_alpha(),
+        pygame.image.load('imges/one.png').convert_alpha(),
+        pygame.image.load('imges/two.png').convert_alpha(),
+        pygame.image.load('imges/three.png').convert_alpha(),
+        pygame.image.load('imges/four.png').convert_alpha(),
+        pygame.image.load('imges/five.png').convert_alpha(),
+        pygame.image.load('imges/six.png').convert_alpha(),
+        pygame.image.load('imges/seven.png').convert_alpha(),
+        pygame.image.load('imges/eight.png').convert_alpha(),
+        pygame.image.load('imges/nine.png').convert_alpha(),
     ]
 
    # GAME_SPRITES['message'] =pygame.image.load('gallery/sprites/message.png').convert_alpha()
-    GAME_SPRITES['sea'] =pygame.image.load('py_game_material/imges/sea.png').convert_alpha()
-    GAME_SPRITES['pipe'] =(pygame.transform.rotate(pygame.image.load( PIPE).convert_alpha(), 180), 
+    GAME_SPRITES['sea'] =pygame.image.load('imges/sea.png').convert_alpha()
+    GAME_SPRITES['pipe'] =(pygame.transform.rotate(pygame.image.load(PIPE).convert_alpha(), 180), 
     pygame.image.load(PIPE).convert_alpha()
     )
 
     # Game sounds
    # GAME_SOUNDS['coin_get'] = pygame.mixer.Sound('py_game_material/audio/coin_get.wav')
-    GAME_SOUNDS['main_audio'] = pygame.mixer.Sound('py_game_material/audio/main_audio.mp3')
-    GAME_SOUNDS['point'] = pygame.mixer.Sound('py_game_material/audio/coin_get.wav')
+    GAME_SOUNDS['main_audio'] = pygame.mixer.Sound('audio/main_audio.mp3')
+    GAME_SOUNDS['point'] = pygame.mixer.Sound('audio/coin_get.wav')
    # GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('')
    # GAME_SOUNDS['wing'] = pygame.mixer.Sound('')
 
